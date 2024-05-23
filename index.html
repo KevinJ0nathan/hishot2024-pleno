@@ -21,18 +21,7 @@
         <div class="preloader" id="preloader">
             <img src="HISHOT-preloader-rev4.webp" class="img-fluid">
         </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const preloader = document.getElementById('preloader');
-                setTimeout(() => {
-                    preloader.classList.add('fade-out');
-                    preloader.addEventListener('transitionend', () => {
-                        preloader.style.display = 'none';
-                        document.body.classList.remove('no-scroll');
-                    });
-                }, 6000); // 6000 milliseconds = 6 seconds
-            });
-        </script>
+        <script src="preloader.js"></script>
     <!--Navbar Start-->
     <nav id="navbar" class="navbar navbar-expand-md px-5 py-3 fixed-top">
         <div class="container-fluid">
