@@ -249,6 +249,7 @@ button.navbar-toggler:hover {
 .button-container {
   position: relative;
   display: inline-block;
+  z-index: 100;
 }
 
 .hero-button {
@@ -281,11 +282,11 @@ button.navbar-toggler:hover {
 }
 
 .button-glow:hover {
-  filter: drop-shadow(0 0 5px rgba(67, 255, 201, 0.5)) drop-shadow(0 0 10px rgba(67, 255, 201, 0.3)) drop-shadow(0 0 15px rgba(67, 255, 201, 0.2)) drop-shadow(0 0 20px rgba(67, 255, 201, 0.1));
   position: relative;
+  filter: drop-shadow(0 0 5px rgba(67, 255, 201, 0.5)) drop-shadow(0 0 10px rgba(67, 255, 201, 0.3)) drop-shadow(0 0 15px rgba(67, 255, 201, 0.2)) drop-shadow(0 0 20px rgba(67, 255, 201, 0.1));
   z-index: 10;
-  opacity: 1;
 }
+
 
 /*Hero End*/
 
