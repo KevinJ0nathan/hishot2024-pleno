@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "hishot2024-pleno",
+			"path": "."
+		},
+		{
+			"name": "assets",
+			"path": "../../../Downloads/HISHOT-2024 (22)/assets"
+		},
+		{
+			"name": "fonts",
+			"path": "../../../Downloads/HISHOT-2024 (22)/fonts"
+		}
+	],
+	"settings": {}
+}
