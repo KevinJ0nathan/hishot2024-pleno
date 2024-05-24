@@ -287,7 +287,6 @@ button.navbar-toggler:hover {
   z-index: 10;
 }
 
-
 /*Hero End*/
 
 .Main {
@@ -2551,9 +2550,13 @@ b {
 
 /* FAQ End */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 840px) {
   .faq {
     padding: 0;
+  }
+
+  .faq_title-short {
+    font-size: 40px;
   }
 
   .faq_title {
@@ -2597,14 +2600,15 @@ b {
     max-height: 30rem;
   }
 
-  .faq_title-short {
-    font-size: 43px;
-  }
+
 }
 
 @media only screen and (max-width: 1480px) {
   .faq {
     margin-top: 0rem;
+    background-image: url(assets/Gridlines\ dimensional\ wall.svg);
+    background-position: center;
+    background-size: cover;
   }
   
   .faq_title {
@@ -2775,58 +2779,103 @@ b {
 
 /* Sponsor Start */
 
+/* Sponsor Start */
+
 .medpat {
   background-image: url(assets/binary_code_rain.png);
   background-size: cover;
   width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
 .bg-medpat {
   padding: 50px;
   width: 100%;
-  height: 600px;
-}
-
-.slider-area {
+  height: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-family: 'Quantum', sans-serif;
+  justify-content: center;
 }
 
-.text-slider-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Quantum', sans-serif;
-  color: #D0E0E6;
+.sponsor-container {
+  background-image: linear-gradient(to right, #875CDD, #6FF0F2);
+  border-image: linear-gradient(to right, #875CDD, #6FF0F2) 1; 
+  border-style: solid;
+  border-width: 5px;
+  clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
+  width: 90% !important;
+  height: 240px;
+  display: flex; 
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
 }
 
-.section-support {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 10px;
+.sponsor-container::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: var(--night);
+  clip-path: inherit; 
+  z-index: -1;
 }
 
-
-.support-by {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Quantum', sans-serif;
-  color: #D0E0E6;
+.supported-container {
+  background-image: linear-gradient(to right, #875CDD, #6FF0F2);
+  border-image: linear-gradient(to right, #875CDD, #6FF0F2) 1; 
+  border-style: solid;
+  border-width: 5px;
+  clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
+  width: 60% !important;
+  height: 240px;
+  display: flex; 
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
 }
 
-.support-box {
-  width: 90%;
-  max-width: 200px;
-  height: 50px;
+.supported-container::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: var(--night);
+  clip-path: inherit; 
+  z-index: -1;
+}
+
+.bg-medpat p{
+  margin-top: 100px;
+  font-family: 'Quantum';
+  text-align: center;
+  font-size: 40px;
+  color: var(--columbiaBlue) !important;
+}
+
+@media only screen and (max-width: 630px) {
+  .supported-container, .sponsor-container{
+    height: 120px !important;
+  }
+
+  .supported-container{
+    width: 200px !important;
+  }
+
+  .bg-medpat p{
+    margin-top: 100px;
+    font-family: 'Quantum';
+    text-align: center;
+    font-size: 30px;
+    color: var(--columbiaBlue) !important;
+  }
 }
 
 
