@@ -1372,6 +1372,14 @@ button.navbar-toggler:hover {
     align-items: center;
   }
 
+  .linkedin-container i{
+    font-size: 36px !important;
+  }
+
+  .linkedin-container {
+    padding-top: 20px !important;
+  }
+
 }
 
 @media only screen and (max-width: 630px) {
@@ -2507,7 +2515,7 @@ textarea {
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 2rem;
-  text-align: justify;
+  text-align: left;
   font-family: 'Monocode';
 }
 
@@ -2606,9 +2614,6 @@ b {
 @media only screen and (max-width: 1480px) {
   .faq {
     margin-top: 0rem;
-    background-image: url(assets/Gridlines\ dimensional\ wall.svg);
-    background-position: center;
-    background-size: cover;
   }
   
   .faq_title {
@@ -2637,6 +2642,12 @@ b {
 }
 
 @media only screen and (max-width: 900px) {
+  .faq{
+    background-image: url(assets/Gridlines\ dimensional\ wall.svg);
+    background-position: center;
+    background-size: cover;
+  }
+  
   .faq_bg{
     display:none;
   }
@@ -2798,17 +2809,16 @@ b {
   justify-content: center;
 }
 
-.supported-container {
+.sponsor-container {
   background-image: linear-gradient(to right, #875CDD, #6FF0F2);
   border-image: linear-gradient(to right, #875CDD, #6FF0F2) 1; 
   border-style: solid;
   border-width: 5px;
   clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
-  width: 30% !important;
+  width: 90% !important;
   height: 240px;
   display: flex; 
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 1;
   margin-top: 50px;
@@ -2826,16 +2836,17 @@ b {
   z-index: -1;
 }
 
-.sponsor-container {
+.supported-container {
   background-image: linear-gradient(to right, #875CDD, #6FF0F2);
   border-image: linear-gradient(to right, #875CDD, #6FF0F2) 1; 
   border-style: solid;
   border-width: 5px;
   clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
-  width: 90% !important;
+  width: 400px !important;
   height: 240px;
   display: flex; 
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
   margin-top: 50px;
@@ -2876,7 +2887,8 @@ b {
     width: 200px !important;
   }
 
-    .supported-container img{
+  .supported-container img{
+    scale: 0.6;
     width: auto;
     height: auto;
   }
