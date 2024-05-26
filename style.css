@@ -2299,17 +2299,16 @@ button.navbar-toggler:hover {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border: 3px solid #43ffbf;
-  background-color: #43ffbf;
+  border: 3px solid #2DE579;
+  background-color: #2DE579;
   /* border-radius: 1rem; */
-  box-shadow: 0px 0px 30px 2px #43ffbf;
-  width: 70vw;
+  box-shadow: 0px 0px 30px 2px #2DE579;
   padding: 2rem;
   animation: blink-faq 2s infinite;
   will-change: box-shadow;
   margin-top: 100px;
   clip-path: polygon(5% 0, 95% 0, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0 85%, 0 15%);
-  width: 100% !important;
+  width: 97% !important;
 }
 
 .faq_title::after {
@@ -2379,6 +2378,7 @@ button.navbar-toggler:hover {
 }
 
 .faq_accordion_item {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -2386,7 +2386,7 @@ button.navbar-toggler:hover {
   position: relative;
   /* margin-top: 200px; */
   /* border: solid 2px #43ffbf; */
-  background-color: #43ffbf;
+  background-color: #2DE579;
   /* border-radius: 15px; */
   /* width: 90% !important; */
   overflow: hidden;
@@ -2397,7 +2397,7 @@ button.navbar-toggler:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 2px solid #43ffbf;
+  border: 2px solid #2DE579;
   clip-path: polygon(0 0, 97% 0, 100% 30%, 100% 100%, 100% 100%, 3% 100%, 0 70%, 0 0);
 }
 
@@ -2479,6 +2479,7 @@ textarea {
   position: relative;
   min-width: 20px;
   min-height: 20px;
+  margin-right: 30px;
 }
 
 .faq_vertical {
@@ -2535,7 +2536,7 @@ textarea {
 }
 
 .faq-answer-link {
-  color: #43ffbf;
+  color: #2DE579;
   text-decoration: underline;
 }
 
@@ -2561,6 +2562,10 @@ b {
 @media only screen and (max-width: 840px) {
   .faq {
     padding: 0;
+  }
+
+  .faq_plus{
+    margin-right: 0;
   }
 
   .faq_title-short {
@@ -2863,6 +2868,7 @@ b {
   clip-path: inherit; 
   z-index: -1;
 }
+
 
 .bg-medpat p{
   margin-top: 100px;
