@@ -920,6 +920,7 @@ button.navbar-toggler:hover {
 
 .event-button:hover {
   transform: scale(1.05);
+   filter: drop-shadow(0 0 5px rgba(67, 255, 201, 0.5)) drop-shadow(0 0 10px rgba(67, 255, 201, 0.3)) drop-shadow(0 0 15px rgba(67, 255, 201, 0.2)) drop-shadow(0 0 20px rgba(67, 255, 201, 0.1));
 }
 
 .event-active {
