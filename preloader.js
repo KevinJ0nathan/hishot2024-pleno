@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Refresh preloader image source on page load
-    window.addEventListener('load', () => {
+    // Refresh preloader image source only when the page is refreshed
+    window.addEventListener('beforeunload', () => {
         const imageUrl = preloaderAnimation.src.split('?')[0]; // Remove any existing query string
         const timestamp = new Date().getTime(); // Generate new timestamp
         preloaderAnimation.src = `${imageUrl}?t=${timestamp}`; // Append timestamp as query string to force refresh
