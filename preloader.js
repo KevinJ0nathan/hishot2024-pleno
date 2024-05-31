@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
+    const preloaderAnimation = document.getElementById('preloader-animation');
     const minimumDuration = 6000; // 6000 milliseconds = 6 seconds
     let pageLoaded = false;
     const startTime = Date.now();
@@ -29,5 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (Date.now() - startTime >= minimumDuration) {
             fadeOutPreloader();
         }
+    });
+
+    // Refresh preloader image source on page load
+    window.addEventListener('load', () => {
+        const imageUrl = preloaderAnimation.src.split('?')[0]; // Remove any existing query string
+        const timestamp = new Date().getTime(); // Generate new timestamp
+        preloaderAnimation.src = `${imageUrl}?t=${timestamp}`; // Append timestamp as query string to force refresh
     });
 });
